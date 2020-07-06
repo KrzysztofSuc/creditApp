@@ -1,11 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d327db2-0a4b-40f7-bef3-7a175e60f934" name="Default Changelist" comment="" />
+    <list default="true" id="2d327db2-0a4b-40f7-bef3-7a175e60f934" name="Default Changelist" comment="created 2 methods in controller: addCustomer, get">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/creditApp/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/creditApp/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/creditApp/model/dto/CustomerDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/creditApp/repository/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/creditApp/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/creditApp/service/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/src/main/resources/validationMessages.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/creditApp/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/creditApp/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/creditApp/model/dto/ProductDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/creditApp/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/creditApp/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/creditApp/service/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/resources/validationMessages.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/creditApp/CustomerServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/creditApp/CustomerServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/creditApp/ProductServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/creditApp/ProductServiceApplication.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -15,6 +45,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1eJOnUEsnSlSHnSs4un0gCIBLCJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,6 +55,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ToolWindowAnt.ShowToolbar" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -30,14 +64,29 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\desktop\IdeaProjects\creditApp\customer-service\src\main\resources" />
+      <recent name="C:\Users\desktop\IdeaProjects\creditApp\product-service\src\main\resources" />
       <recent name="C:\Users\desktop\IdeaProjects\creditApp\discovery-server\src\main\java\com\example" />
       <recent name="C:\Users\desktop\IdeaProjects\creditApp\discovery-server\src\main\java\com" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CreditServiceApplication">
+  <component name="RunManager" selected="Application.CustomerServiceApplication">
     <configuration name="CreditServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.creditApp.CreditServiceApplication" />
       <module name="credit-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.creditApp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.creditApp.CustomerServiceApplication" />
+      <module name="customer-service" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.creditApp.*" />
@@ -61,7 +110,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in discovery-server" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.creditApp.ProductServiceApplication" />
+      <module name="product-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.creditApp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in discovery-server (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="discovery-server" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
@@ -71,9 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CreditServiceApplication" />
+        <item itemvalue="Application.CustomerServiceApplication" />
         <item itemvalue="Application.DiscoveryServerApplication" />
-        <item itemvalue="JUnit.All in discovery-server" />
+        <item itemvalue="Application.ProductServiceApplication" />
+        <item itemvalue="JUnit.All in discovery-server (1)" />
+        <item itemvalue="Application.CreditServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -90,6 +154,17 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="451" y="87" key="#Project_Structure" timestamp="1594036703578">
       <screen x="0" y="0" width="1920" height="1030" />
@@ -99,30 +174,38 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="409" y="157" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594037319724" />
+    <state x="717" y="151" key="#com.intellij.ide.util.MemberChooser" timestamp="1594043477716">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state x="717" y="151" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594043477716" />
     <state x="673" y="128" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1594037944010">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="673" y="128" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594037944010" />
+    <state x="426" y="30" key="CommitChangelistDialog2" timestamp="1594044025635">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state x="426" y="30" key="CommitChangelistDialog2/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594044025635" />
     <state x="738" y="409" key="Github.CreateGistDialog" timestamp="1594037186934">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="738" y="409" key="Github.CreateGistDialog/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594037186934" />
-    <state width="1863" height="265" key="GridCell.Tab.0.bottom" timestamp="1594038955537">
+    <state width="1863" height="365" key="GridCell.Tab.0.bottom" timestamp="1594043661450">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1863" height="265" key="GridCell.Tab.0.bottom/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594038955537" />
-    <state width="1863" height="265" key="GridCell.Tab.0.center" timestamp="1594038955537">
+    <state width="1863" height="365" key="GridCell.Tab.0.bottom/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594043661450" />
+    <state width="1863" height="365" key="GridCell.Tab.0.center" timestamp="1594043661450">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1863" height="265" key="GridCell.Tab.0.center/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594038955537" />
-    <state width="1863" height="265" key="GridCell.Tab.0.left" timestamp="1594038955537">
+    <state width="1863" height="365" key="GridCell.Tab.0.center/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594043661450" />
+    <state width="1863" height="365" key="GridCell.Tab.0.left" timestamp="1594043661450">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1863" height="265" key="GridCell.Tab.0.left/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594038955537" />
-    <state width="1863" height="265" key="GridCell.Tab.0.right" timestamp="1594038955537">
+    <state width="1863" height="365" key="GridCell.Tab.0.left/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594043661450" />
+    <state width="1863" height="365" key="GridCell.Tab.0.right" timestamp="1594043661450">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1863" height="265" key="GridCell.Tab.0.right/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594038955537" />
+    <state width="1863" height="365" key="GridCell.Tab.0.right/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594043661450" />
     <state x="311" y="0" key="SettingsEditor" timestamp="1594038180225">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
