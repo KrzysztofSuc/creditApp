@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d327db2-0a4b-40f7-bef3-7a175e60f934" name="Default Changelist" comment="created 2 methods in controller: addCustomer(), getCustomerByCreditNumber()">
+    <list default="true" id="2d327db2-0a4b-40f7-bef3-7a175e60f934" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/creditApp/exception/ErrorDetails.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/creditApp/exception/GlobalExceptionHandler.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/creditApp/exception/ErrorDetails.java" afterDir="false" />
@@ -154,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594044114585</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Creation error handling&#10;- ErrorDetails&#10;- GlobalExceptionHandler&#10;Added ResponseEntity in controllers">
+      <created>1594228298277</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1594228298277</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -182,7 +189,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="created 2 methods in controller: addCustomer(), getCustomerByCreditNumber()" />
-    <option name="LAST_COMMIT_MESSAGE" value="created 2 methods in controller: addCustomer(), getCustomerByCreditNumber()" />
+    <MESSAGE value="Creation error handling&#10;- ErrorDetails&#10;- GlobalExceptionHandler&#10;Added ResponseEntity in controllers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creation error handling&#10;- ErrorDetails&#10;- GlobalExceptionHandler&#10;Added ResponseEntity in controllers" />
   </component>
   <component name="WindowStateProjectService">
     <state x="451" y="87" key="#Project_Structure" timestamp="1594036703578">
@@ -201,10 +209,10 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="673" y="128" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594037944010" />
-    <state x="569" y="1" width="1143" height="962" key="CommitChangelistDialog2" timestamp="1594044334700">
+    <state x="569" y="1" width="1143" height="962" key="CommitChangelistDialog2" timestamp="1594228297529">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="569" y="1" width="1143" height="962" key="CommitChangelistDialog2/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594044334700" />
+    <state x="569" y="1" width="1143" height="962" key="CommitChangelistDialog2/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594228297529" />
     <state x="91" y="91" width="1738" height="848" key="DiffContextDialog" timestamp="1594044213934">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
@@ -237,10 +245,10 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="311" y="0" key="SettingsEditor/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594038180225" />
-    <state x="451" y="179" key="Vcs.Push.Dialog.v2" timestamp="1594044351749">
+    <state x="451" y="179" key="Vcs.Push.Dialog.v2" timestamp="1594228299998">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="451" y="179" key="Vcs.Push.Dialog.v2/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594044351749" />
+    <state x="451" y="179" key="Vcs.Push.Dialog.v2/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594228299998" />
     <state x="227" y="32" key="new project wizard" timestamp="1594038177341">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
