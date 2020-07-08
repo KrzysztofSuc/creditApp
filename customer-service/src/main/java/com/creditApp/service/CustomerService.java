@@ -1,9 +1,10 @@
 package com.creditApp.service;
 
-import com.creditApp.model.Customer;
+import com.creditApp.model.dto.CustomerDto;
 
 public interface CustomerService {
-    Customer addCustomer(Customer customer);
-    Customer findByCreditNumber(String creditNumber);
+    CustomerDto addCustomer(CustomerDto customerDto);
+
+    CustomerDto findByCreditNumber(String creditNumber);
 
 }

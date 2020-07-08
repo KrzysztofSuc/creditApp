@@ -1,9 +1,9 @@
 package com.creditApp.service;
 
-import com.creditApp.model.Product;
+import com.creditApp.model.dto.ProductDto;
 
 public interface ProductService {
-    Product addProduct(Product product);
+    ProductDto addProduct(ProductDto productDto);
 
-    Product findByCreditNumber(String creditNumber);
+    ProductDto findByCreditNumber(String creditNumber);
 }

@@ -1,10 +1,11 @@
 package com.creditApp.controller;
 
-import com.creditApp.model.Customer;
 import com.creditApp.model.dto.CustomerDto;
 import com.creditApp.service.CustomerService;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -15,15 +16,15 @@ import org.springframework.web.bind.annotation.RestController;
 public class CustomerController {
 
     private final CustomerService customerService;
-    private final ModelMapper modelMapper;
 
     @PostMapping("/add")
-    public Customer addCustomer(CustomerDto customerDto){
-        return customerService.addCustomer(modelMapper.map(customerDto, Customer.class));
+    public ResponseEntity<CustomerDto> addCustomer(CustomerDto customerDto) {
+        return ResponseEntity.status(HttpStatus.CREATED)
+                .body(customerService.addCustomer(customerDto));
     }
 
     @GetMapping("/{creditNumber}")
-    public CustomerDto getCustomerByCreditNumber(@PathVariable String creditNumber){
-        return modelMapper.map(customerService.findByCreditNumber(creditNumber), CustomerDto.class);
+    public ResponseEntity<CustomerDto> getCustomerByCreditNumber(@PathVariable String creditNumber) {
+        return ResponseEntity.status(HttpStatus.OK).body(customerService.findByCreditNumber(creditNumber));
     }
 }
