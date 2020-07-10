@@ -18,8 +18,7 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Override
     public CustomerDto addCustomer(CustomerDto customerDto) {
-        Customer customer = customerRepository.save(modelMapper.map(customerDto, Customer.class));
-        return modelMapper.map(customer, CustomerDto.class);
+        return modelMapper.map(customerRepository.save(modelMapper.map(customerDto, Customer.class)), CustomerDto.class);
     }
 
     @Override
@@ -27,5 +26,11 @@ public class CustomerServiceImpl implements CustomerService {
         return Optional.ofNullable(customerRepository.findByCreditNumber(creditNumber))
                 .map(customer -> modelMapper.map(customer, CustomerDto.class))
                 .orElseThrow(NullPointerException::new);
+    }
+
+    @Override
+    public void removeCustomer(String creditNumber) {
+        Customer customer = modelMapper.map(findByCreditNumber(creditNumber), Customer.class);
+        customerRepository.deleteByCreditNumber(customer.getCreditNumber());
     }
 }

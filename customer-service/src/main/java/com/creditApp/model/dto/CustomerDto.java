@@ -19,7 +19,7 @@ public class CustomerDto {
     @NotEmpty(message = "{customer.lastName.notEmpty}")
     private String lastName;
     @NotEmpty
-    @Pattern(regexp="^(0|[1-9][0-9]*)$")
+    @Pattern(regexp = "^(0|[1-9][0-9]*)$")
     @Size(min = 11, max = 11)
     private String pesel;
     private String creditNumber;

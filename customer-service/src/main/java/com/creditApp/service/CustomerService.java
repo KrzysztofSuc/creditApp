@@ -7,4 +7,6 @@ public interface CustomerService {
 
     CustomerDto findByCreditNumber(String creditNumber);
 
+    void removeCustomer(String creditNumber);
+
 }

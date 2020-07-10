@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d327db2-0a4b-40f7-bef3-7a175e60f934" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/creditApp/exception/ErrorDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/creditApp/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/creditApp/exception/ErrorDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/creditApp/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/creditApp/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/creditApp/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/creditApp/model/dto/CustomerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/creditApp/model/dto/CustomerDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/creditApp/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/creditApp/repository/CustomerRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/creditApp/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/creditApp/service/CustomerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/creditApp/service/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/creditApp/service/CustomerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/creditApp/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/creditApp/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/creditApp/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/creditApp/repository/ProductRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/creditApp/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/creditApp/service/ProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/creditApp/service/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/creditApp/service/ProductServiceImpl.java" afterDir="false" />
     </list>
@@ -129,8 +126,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.CustomerServiceApplication" />
-        <item itemvalue="Application.DiscoveryServerApplication" />
         <item itemvalue="Application.ProductServiceApplication" />
+        <item itemvalue="Application.DiscoveryServerApplication" />
         <item itemvalue="JUnit.All in discovery-server (1)" />
         <item itemvalue="Application.CreditServiceApplication" />
       </list>
@@ -161,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594228298277</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Changing ports in &#10;- credit-service&#10;- customer-service">
+      <created>1594228478729</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1594228478729</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -190,7 +194,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="created 2 methods in controller: addCustomer(), getCustomerByCreditNumber()" />
     <MESSAGE value="Creation error handling&#10;- ErrorDetails&#10;- GlobalExceptionHandler&#10;Added ResponseEntity in controllers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creation error handling&#10;- ErrorDetails&#10;- GlobalExceptionHandler&#10;Added ResponseEntity in controllers" />
+    <MESSAGE value="Changing ports in &#10;- credit-service&#10;- customer-service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changing ports in &#10;- credit-service&#10;- customer-service" />
   </component>
   <component name="WindowStateProjectService">
     <state x="451" y="87" key="#Project_Structure" timestamp="1594036703578">
@@ -201,18 +206,18 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="409" y="157" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594037319724" />
-    <state x="717" y="151" key="#com.intellij.ide.util.MemberChooser" timestamp="1594226480511">
+    <state x="717" y="151" key="#com.intellij.ide.util.MemberChooser" timestamp="1594393033709">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="717" y="151" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594226480511" />
+    <state x="717" y="151" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594393033709" />
     <state x="673" y="128" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1594037944010">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="673" y="128" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594037944010" />
-    <state x="569" y="1" width="1143" height="962" key="CommitChangelistDialog2" timestamp="1594228297529">
+    <state x="569" y="1" width="1143" height="962" key="CommitChangelistDialog2" timestamp="1594228478165">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="569" y="1" width="1143" height="962" key="CommitChangelistDialog2/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594228297529" />
+    <state x="569" y="1" width="1143" height="962" key="CommitChangelistDialog2/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594228478165" />
     <state x="91" y="91" width="1738" height="848" key="DiffContextDialog" timestamp="1594044213934">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
@@ -221,22 +226,38 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="738" y="409" key="Github.CreateGistDialog/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594037186934" />
-    <state width="1864" height="365" key="GridCell.Tab.0.bottom" timestamp="1594227008265">
+    <state width="1864" height="197" key="GridCell.Tab.0.bottom" timestamp="1594393490114">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="365" key="GridCell.Tab.0.bottom/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594227008265" />
-    <state width="1864" height="365" key="GridCell.Tab.0.center" timestamp="1594227008265">
+    <state width="1864" height="197" key="GridCell.Tab.0.bottom/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594393490114" />
+    <state width="1864" height="197" key="GridCell.Tab.0.center" timestamp="1594393490114">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="365" key="GridCell.Tab.0.center/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594227008265" />
-    <state width="1864" height="365" key="GridCell.Tab.0.left" timestamp="1594227008250">
+    <state width="1864" height="197" key="GridCell.Tab.0.center/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594393490114" />
+    <state width="1864" height="197" key="GridCell.Tab.0.left" timestamp="1594393490114">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="365" key="GridCell.Tab.0.left/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594227008250" />
-    <state width="1864" height="365" key="GridCell.Tab.0.right" timestamp="1594227008265">
+    <state width="1864" height="197" key="GridCell.Tab.0.left/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594393490114" />
+    <state width="1864" height="197" key="GridCell.Tab.0.right" timestamp="1594393490114">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="365" key="GridCell.Tab.0.right/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594227008265" />
+    <state width="1864" height="197" key="GridCell.Tab.0.right/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594393490114" />
+    <state width="1864" height="329" key="GridCell.Tab.1.bottom" timestamp="1594392201543">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state width="1864" height="329" key="GridCell.Tab.1.bottom/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594392201543" />
+    <state width="1864" height="329" key="GridCell.Tab.1.center" timestamp="1594392201543">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state width="1864" height="329" key="GridCell.Tab.1.center/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594392201543" />
+    <state width="1864" height="329" key="GridCell.Tab.1.left" timestamp="1594392201543">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state width="1864" height="329" key="GridCell.Tab.1.left/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594392201543" />
+    <state width="1864" height="329" key="GridCell.Tab.1.right" timestamp="1594392201543">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state width="1864" height="329" key="GridCell.Tab.1.right/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594392201543" />
     <state x="891" y="119" key="RollbackChangesDialog" timestamp="1594044222865">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
@@ -245,10 +266,10 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="311" y="0" key="SettingsEditor/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594038180225" />
-    <state x="451" y="179" key="Vcs.Push.Dialog.v2" timestamp="1594228299998">
+    <state x="451" y="179" key="Vcs.Push.Dialog.v2" timestamp="1594228484925">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="451" y="179" key="Vcs.Push.Dialog.v2/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594228299998" />
+    <state x="451" y="179" key="Vcs.Push.Dialog.v2/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594228484925" />
     <state x="227" y="32" key="new project wizard" timestamp="1594038177341">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
