@@ -6,4 +6,6 @@ public interface ProductService {
     ProductDto addProduct(ProductDto productDto);
 
     ProductDto findByCreditNumber(String creditNumber);
+
+    void removeProduct(String creditNumber);
 }

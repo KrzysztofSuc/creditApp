@@ -18,8 +18,7 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public ProductDto addProduct(ProductDto productDto) {
-        Product product = productRepository.save(modelMapper.map(productDto, Product.class));
-        return modelMapper.map(product, ProductDto.class);
+        return modelMapper.map(productRepository.save(modelMapper.map(productDto, Product.class)), ProductDto.class);
     }
 
     @Override
@@ -27,5 +26,11 @@ public class ProductServiceImpl implements ProductService {
         return Optional.ofNullable(productRepository.findByCreditNumber(creditNumber))
                 .map(product -> modelMapper.map(product, ProductDto.class))
                 .orElseThrow(NullPointerException::new);
+    }
+
+    @Override
+    public void removeProduct(String creditNumber) {
+        Product product = modelMapper.map(findByCreditNumber(creditNumber), Product.class);
+        productRepository.deleteByCreditNumber(product.getCreditNumber());
     }
 }
