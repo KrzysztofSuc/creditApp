@@ -7,6 +7,7 @@ import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
+import java.util.NoSuchElementException;
 import java.util.Optional;
 
 @Service
@@ -25,7 +26,7 @@ public class CustomerServiceImpl implements CustomerService {
     public CustomerDto findByCreditNumber(String creditNumber) {
         return Optional.ofNullable(customerRepository.findByCreditNumber(creditNumber))
                 .map(customer -> modelMapper.map(customer, CustomerDto.class))
-                .orElseThrow(NullPointerException::new);
+                .orElseThrow(NoSuchElementException::new);
     }
 
     @Override

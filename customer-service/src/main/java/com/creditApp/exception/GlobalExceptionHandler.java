@@ -5,32 +5,44 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.context.request.WebRequest;
 
 import java.util.Date;
+import java.util.NoSuchElementException;
 
 @ControllerAdvice
 public class GlobalExceptionHandler {
 
-    @ExceptionHandler(Exception.class)
-    public ResponseEntity<?> globalExceptionHandling(Exception exception, WebRequest request){
-        ErrorDetails errorDetails =
-                new ErrorDetails(new Date(), exception.getMessage(), request.getDescription(false));
+    @ExceptionHandler(RuntimeException.class)
+    public ResponseEntity<?> globalExceptionHandling(Exception exception, WebRequest request) {
+        ErrorDetails errorDetails = ErrorDetails
+                .builder()
+                .timestamp(new Date())
+                .message(exception.getMessage())
+                .details(request.getDescription(false))
+                .build();
         return new ResponseEntity<>(errorDetails, HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
     @ExceptionHandler(MethodArgumentNotValidException.class)
-    public ResponseEntity<?> customValidationErrorHandling(MethodArgumentNotValidException exception){
-        ErrorDetails errorDetails = new ErrorDetails(new Date(), "Validation Error",
-                exception.getBindingResult().getFieldError().getDefaultMessage());
+    public ResponseEntity<?> customValidationErrorHandling(MethodArgumentNotValidException exception) {
+        ErrorDetails errorDetails = ErrorDetails
+                .builder()
+                .timestamp(new Date())
+                .message("Validation Error")
+                .details(exception.getBindingResult().getFieldError().getDefaultMessage())
+                .build();
         return new ResponseEntity<>(errorDetails, HttpStatus.BAD_REQUEST);
     }
 
-    @ExceptionHandler(NullPointerException.class)
-    public ResponseEntity<?> notFoundExceptionHandling(Exception exception, WebRequest request){
-        ErrorDetails errorDetails =
-                new ErrorDetails(new Date(), "Not Found Entity", request.getDescription(false));
+    @ExceptionHandler(NoSuchElementException.class)
+    public ResponseEntity<?> handleNoSuchElementExceptionException(Exception exception, WebRequest request) {
+        ErrorDetails errorDetails = ErrorDetails
+                .builder()
+                .timestamp(new Date())
+                .message("Not Found Entity")
+                .details(request.getDescription(false))
+                .build();
         return new ResponseEntity<>(errorDetails, HttpStatus.NOT_FOUND);
     }
 }
