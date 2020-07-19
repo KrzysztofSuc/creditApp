@@ -20,11 +20,16 @@ public class CreditController {
     public ResponseEntity<CreditDto> addCredit(@Valid @RequestBody CreditContainer creditContainer) {
         return ResponseEntity.status(HttpStatus.CREATED)
                 .body(creditService.addCredit(creditContainer.getCustomerDto(), creditContainer.getProductDto()));
-
     }
 
     @GetMapping("/{creditNumber}")
     public ResponseEntity<CreditContainer> getCredit(@PathVariable String creditNumber) {
         return ResponseEntity.status(HttpStatus.OK).body(creditService.getCredit(creditNumber));
+    }
+
+    @DeleteMapping("/{creditNumber}")
+    public ResponseEntity<?> removeCredit(@PathVariable String creditNumber) {
+        creditService.removeCredit(creditNumber);
+        return ResponseEntity.status(HttpStatus.OK).build();
     }
 }

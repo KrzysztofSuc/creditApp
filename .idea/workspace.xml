@@ -2,26 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d327db2-0a4b-40f7-bef3-7a175e60f934" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/credit-service/src/main/java/com/creditApp/controller/CreditController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/credit-service/src/main/java/com/creditApp/exception/ErrorDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/credit-service/src/main/java/com/creditApp/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/credit-service/src/main/resources/validationMessages.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credit-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/credit-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credit-service/src/main/java/com/creditApp/CreditServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-service/src/main/java/com/creditApp/CreditServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credit-service/src/main/java/com/creditApp/model/CreditContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-service/src/main/java/com/creditApp/model/CreditContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/credit-service/src/main/java/com/creditApp/controller/CreditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-service/src/main/java/com/creditApp/controller/CreditController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/credit-service/src/main/java/com/creditApp/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-service/src/main/java/com/creditApp/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/credit-service/src/main/java/com/creditApp/model/dto/CustomerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-service/src/main/java/com/creditApp/model/dto/CustomerDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/credit-service/src/main/java/com/creditApp/model/dto/ProductDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-service/src/main/java/com/creditApp/model/dto/ProductDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/credit-service/src/main/java/com/creditApp/repository/CreditRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-service/src/main/java/com/creditApp/repository/CreditRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/credit-service/src/main/java/com/creditApp/service/CreditService.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-service/src/main/java/com/creditApp/service/CreditService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/credit-service/src/main/java/com/creditApp/service/CreditServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-service/src/main/java/com/creditApp/service/CreditServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/creditApp/exception/ErrorDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/creditApp/exception/ErrorDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/creditApp/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/creditApp/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/creditApp/service/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/creditApp/service/CustomerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/creditApp/exception/ErrorDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/creditApp/exception/ErrorDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/creditApp/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/creditApp/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/creditApp/service/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/creditApp/service/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/credit-service/src/main/resources/validationMessages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/credit-service/src/main/resources/validationMessages.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/creditApp/model/dto/ProductDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/creditApp/model/dto/ProductDto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,18 +61,18 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.creditApp" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.creditApp.model.dto" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\desktop\IdeaProjects\creditApp\credit-service\src\main\resources" />
       <recent name="C:\Users\desktop\IdeaProjects\creditApp\customer-service\src\main\resources" />
       <recent name="C:\Users\desktop\IdeaProjects\creditApp\product-service\src\main\resources" />
       <recent name="C:\Users\desktop\IdeaProjects\creditApp\discovery-server\src\main\java\com\example" />
       <recent name="C:\Users\desktop\IdeaProjects\creditApp\discovery-server\src\main\java\com" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.creditApp.model.dto" />
     </key>
   </component>
   <component name="RunManager" selected="Application.CreditServiceApplication">
@@ -154,8 +144,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.CreditServiceApplication" />
-        <item itemvalue="Application.CustomerServiceApplication" />
         <item itemvalue="Application.ProductServiceApplication" />
+        <item itemvalue="Application.CustomerServiceApplication" />
         <item itemvalue="Application.DiscoveryServerApplication" />
         <item itemvalue="Application.GatewayServerApplication" />
       </list>
@@ -214,7 +204,21 @@
       <option name="project" value="LOCAL" />
       <updated>1594659129339</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Change in expression creation">
+      <created>1594838919164</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1594838919164</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Creation of expressions and addition getCredit()">
+      <created>1594839045650</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1594839045650</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -247,7 +251,9 @@
     <MESSAGE value="Created removeCustomer method" />
     <MESSAGE value="Created removeProduct method" />
     <MESSAGE value="Added restTemplate and some business logic in CreditServiceImpl.class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added restTemplate and some business logic in CreditServiceImpl.class" />
+    <MESSAGE value="Change in expression creation" />
+    <MESSAGE value="Creation of expressions and addition getCredit()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creation of expressions and addition getCredit()" />
   </component>
   <component name="WindowStateProjectService">
     <state x="451" y="87" key="#Project_Structure" timestamp="1594036703578">
@@ -258,10 +264,10 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="409" y="157" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594037319724" />
-    <state x="717" y="151" key="#com.intellij.ide.util.MemberChooser" timestamp="1594836183543">
+    <state x="717" y="151" key="#com.intellij.ide.util.MemberChooser" timestamp="1595089934932">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="717" y="151" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594836183543" />
+    <state x="717" y="151" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1595089934932" />
     <state x="673" y="128" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1594037944010">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
@@ -274,10 +280,10 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="701" y="367" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594834920336" />
-    <state x="569" y="1" width="1143" height="962" key="CommitChangelistDialog2" timestamp="1594838918277">
+    <state x="569" y="1" width="1143" height="962" key="CommitChangelistDialog2" timestamp="1595174458906">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="569" y="1" width="1143" height="962" key="CommitChangelistDialog2/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594838918277" />
+    <state x="569" y="1" width="1143" height="962" key="CommitChangelistDialog2/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1595174458906" />
     <state x="91" y="91" width="1738" height="848" key="DiffContextDialog" timestamp="1594044213934">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
@@ -286,22 +292,22 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="738" y="409" key="Github.CreateGistDialog/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594037186934" />
-    <state width="1864" height="273" key="GridCell.Tab.0.bottom" timestamp="1594838523985">
+    <state width="1864" height="188" key="GridCell.Tab.0.bottom" timestamp="1595173944468">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="273" key="GridCell.Tab.0.bottom/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594838523985" />
-    <state width="1864" height="273" key="GridCell.Tab.0.center" timestamp="1594838523985">
+    <state width="1864" height="188" key="GridCell.Tab.0.bottom/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1595173944468" />
+    <state width="1864" height="188" key="GridCell.Tab.0.center" timestamp="1595173944468">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="273" key="GridCell.Tab.0.center/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594838523985" />
-    <state width="1864" height="273" key="GridCell.Tab.0.left" timestamp="1594838523985">
+    <state width="1864" height="188" key="GridCell.Tab.0.center/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1595173944468" />
+    <state width="1864" height="188" key="GridCell.Tab.0.left" timestamp="1595173944468">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="273" key="GridCell.Tab.0.left/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594838523985" />
-    <state width="1864" height="273" key="GridCell.Tab.0.right" timestamp="1594838523985">
+    <state width="1864" height="188" key="GridCell.Tab.0.left/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1595173944468" />
+    <state width="1864" height="188" key="GridCell.Tab.0.right" timestamp="1595173944468">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="273" key="GridCell.Tab.0.right/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594838523985" />
+    <state width="1864" height="188" key="GridCell.Tab.0.right/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1595173944468" />
     <state width="1864" height="329" key="GridCell.Tab.1.bottom" timestamp="1594393943232">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
@@ -330,10 +336,10 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state width="641" height="498" key="SwitcherDM/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594654260795" />
-    <state x="451" y="179" key="Vcs.Push.Dialog.v2" timestamp="1594659131185">
+    <state x="451" y="179" key="Vcs.Push.Dialog.v2" timestamp="1594839047710">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="451" y="179" key="Vcs.Push.Dialog.v2/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594659131185" />
+    <state x="451" y="179" key="Vcs.Push.Dialog.v2/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594839047710" />
     <state x="705" y="159" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1594834217528">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>

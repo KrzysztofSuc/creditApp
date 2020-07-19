@@ -11,9 +11,9 @@ import javax.validation.constraints.Size;
 @AllArgsConstructor
 @NoArgsConstructor
 public class CustomerDto {
-    @NotEmpty(message = "{customer.firstName.notempty}")
+    @NotEmpty(message = "{customer.firstName.notEmpty}")
     private String firstName;
-    @NotEmpty(message = "{customer.lastName.notempty}")
+    @NotEmpty(message = "{customer.lastName.notEmpty}")
     private String lastName;
     @NotEmpty
     @Pattern(regexp="^(0|[1-9][0-9]*)$")

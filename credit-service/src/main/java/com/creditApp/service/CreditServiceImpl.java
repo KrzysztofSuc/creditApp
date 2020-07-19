@@ -8,11 +8,14 @@ import com.creditApp.model.dto.ProductDto;
 import com.creditApp.repository.CreditRepository;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
 
+import javax.validation.ValidationException;
 import java.util.NoSuchElementException;
 import java.util.UUID;
 
@@ -30,13 +33,13 @@ public class CreditServiceImpl implements CreditService {
         credit.setCreditNumber(UUID.randomUUID().toString().replace("-", ""));
         customerDto.setCreditNumber(credit.getCreditNumber());
         productDto.setCreditNumber(credit.getCreditNumber());
-
         try {
             restTemplate.postForEntity("http://product-service/add", productDto, ProductDto.class);
             restTemplate.postForEntity("http://customer-service/add", customerDto, CustomerDto.class);
         } catch (HttpClientErrorException e) {
-            if (e.getStatusCode() == HttpStatus.NOT_FOUND) {
-                throw new NoSuchElementException();
+            if (e.getStatusCode() == HttpStatus.BAD_REQUEST) {
+                rollBack(credit.getCreditNumber());
+                throw new ValidationException();
             }
         }
         creditRepository.save(credit);
@@ -49,9 +52,11 @@ public class CreditServiceImpl implements CreditService {
         if (creditRepository.getCreditByCreditNumber(creditNumber) != null) {
             try {
                 creditContainer.setProductDto(restTemplate
-                        .getForEntity("http://product-service/{creditNumber}", ProductDto.class, creditNumber).getBody());
+                        .getForEntity("http://product-service/{creditNumber}", ProductDto.class, creditNumber)
+                        .getBody());
                 creditContainer.setCustomerDto(restTemplate
-                        .getForEntity("http://customer-service/{creditNumber}", CustomerDto.class, creditNumber).getBody());
+                        .getForEntity("http://customer-service/{creditNumber}", CustomerDto.class, creditNumber)
+                        .getBody());
             } catch (HttpClientErrorException e) {
                 if (e.getStatusCode() == HttpStatus.NOT_FOUND) {
                     throw new NoSuchElementException();
@@ -60,5 +65,31 @@ public class CreditServiceImpl implements CreditService {
         } else throw new NoSuchElementException();
 
         return creditContainer;
+    }
+
+    @Override
+    public void removeCredit(String creditNumber) {
+        if (creditRepository.getCreditByCreditNumber(creditNumber) != null) {
+            try {
+                restTemplate.exchange("http://product-service/{creditNumber}",
+                        HttpMethod.DELETE, HttpEntity.EMPTY, String.class, creditNumber);
+                restTemplate.exchange("http://customer-service/{creditNumber}",
+                        HttpMethod.DELETE, HttpEntity.EMPTY, String.class, creditNumber);
+            } catch (HttpClientErrorException e) {
+                if (e.getStatusCode() == HttpStatus.NOT_FOUND) {
+                    throw new NoSuchElementException();
+                }
+            }
+            creditRepository.deleteByCreditNumber(creditNumber);
+        } else throw new NoSuchElementException();
+    }
+
+    private void rollBack(String creditNumber) {
+        try {
+            restTemplate.delete("http://product-service/{creditNumber}", creditNumber);
+            restTemplate.delete("http://customer-service/{creditNumber}", creditNumber);
+            creditRepository.deleteByCreditNumber(creditNumber);
+        } catch (Exception ignored) {
+        }
     }
 }

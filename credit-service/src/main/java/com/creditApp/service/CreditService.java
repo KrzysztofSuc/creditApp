@@ -9,4 +9,6 @@ public interface CreditService {
     CreditDto addCredit(CustomerDto customerDto, ProductDto productDto);
 
     CreditContainer getCredit(String creditNumber);
+
+    void removeCredit(String creditNumber);
 }

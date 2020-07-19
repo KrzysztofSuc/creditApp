@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
 
+import javax.validation.ValidationException;
 import java.util.Date;
 import java.util.NoSuchElementException;
 
@@ -36,7 +37,7 @@ public class GlobalExceptionHandler {
     }
 
     @ExceptionHandler(NoSuchElementException.class)
-    public ResponseEntity<?> handleNoSuchElementExceptionException(Exception exception, WebRequest request) {
+    public ResponseEntity<?> handleNoSuchElementExceptionException(WebRequest request) {
         ErrorDetails errorDetails = ErrorDetails
                 .builder()
                 .timestamp(new Date())
@@ -44,5 +45,16 @@ public class GlobalExceptionHandler {
                 .details(request.getDescription(false))
                 .build();
         return new ResponseEntity<>(errorDetails, HttpStatus.NOT_FOUND);
+    }
+
+    @ExceptionHandler(ValidationException.class)
+    public ResponseEntity<?> validationExceptionHandling(WebRequest request) {
+        ErrorDetails errorDetails = ErrorDetails
+                .builder()
+                .timestamp(new Date())
+                .message("Validation Error")
+                .details(request.getDescription(false))
+                .build();
+        return new ResponseEntity<>(errorDetails, HttpStatus.BAD_REQUEST);
     }
 }
