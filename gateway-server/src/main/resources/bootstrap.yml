@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: gateway-server
+  cloud:
+    config:
+      uri: http://localhost:8888
+#    bus:
+#      enabled: true
+#      refresh:
+#        enabled: true
+#  rabbitmq:
+#    host: localhost
+#    port: 5672
+#    username: guest
+#    password: guest
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
