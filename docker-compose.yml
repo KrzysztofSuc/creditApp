@@ -1,0 +1,67 @@
+version: '3.8'
+services:
+  config-server:
+    image: gitim21/config-server:1.0
+    restart: always
+    ports:
+    - "8888:8888"
+  discovery-server:
+    image: gitim21/discovery-server:1.0
+    restart: always
+    links:
+      - config-server
+    ports:
+    - "8761:8761"
+  gateway-server:
+    image: gitim21/gateway-server:1.0
+    restart: always
+    links:
+      - config-server
+      - discovery-server
+    ports:
+    - "4200:4200"
+  credit-services:
+    image: gitim21/credit-service:1.0
+    restart: always
+    links:
+      - config-server
+      - discovery-server
+      - gateway-server
+      - credit-db
+  credit-db:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_PASSWORD: root
+      MYSQL_DATABASE: creditdb
+      MYSQL_ROOT_PASSWORD: root
+  customer-services:
+    image: gitim21/customer-service:1.0
+    restart: always
+    links:
+      - config-server
+      - discovery-server
+      - gateway-server
+      - customer-db
+  customer-db:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_PASSWORD: root
+      MYSQL_DATABASE: customerdb
+      MYSQL_ROOT_PASSWORD: root
+  product-services:
+    image: gitim21/product-service:1.0
+    restart: always
+    links:
+      - config-server
+      - discovery-server
+      - gateway-server
+      - product-db
+  product-db:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_PASSWORD: root
+      MYSQL_DATABASE: productdb
+      MYSQL_ROOT_PASSWORD: root

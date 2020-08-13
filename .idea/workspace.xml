@@ -1,55 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="discovery-server:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d327db2-0a4b-40f7-bef3-7a175e60f934" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_yaml_2_11_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_javaewah_JavaEWAH_1_1_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jcraft_jsch_0_1_54.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jcraft_jzlib_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jgit_org_eclipse_jgit_5_1_3_201810200350_r.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jgit_org_eclipse_jgit_http_apache_5_1_3_201810200350_r.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_config_client_2_2_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_config_server_2_2_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/credit-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery-server/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway-server/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/resources/bootstrap.yml" afterDir="false" />
+    <list default="true" id="99badef6-7a7d-4ae1-8d80-222fcf085fba" name="Default Changelist" comment="added Dockerfile and docker-compose files">
+      <change afterPath="$PROJECT_DIR$/.idea/creditApp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_config_2_2_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_retry_spring_retry_1_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/java/com/creditApp/ConfigServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/test/java/com/creditApp/ConfigServerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/credit-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-server/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-server/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hdrhistogram_HdrHistogram_2_1_9.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/credit-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/credit-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credit-service/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/credit-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/credit-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/credit-service/src/test/java/com/creditApp/CreditServiceApplicationTests.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/customer-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/test/java/com/creditApp/CustomerServiceApplicationTests.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/discovery-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-server/src/main/java/com/creditApp/DiscoveryServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/src/main/java/com/creditApp/DiscoveryServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-server/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-server/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-server/src/test/java/com/creditApp/DiscoveryServerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/src/test/java/com/creditApp/DiscoveryServerApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gateway-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-server/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/src/test/java/com/creditApp/GatewayServerApplicationTests.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/product-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/test/java/com/creditApp/ProductServiceApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="creditApp" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="JUnit5 Test Class" />
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -61,10 +64,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1eJOnUEsnSlSHnSs4un0gCIBLCJ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="1fMjhFiLu5LTXVp1d2FX5YroonA" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -73,40 +73,18 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="ToolWindowAnt.ShowToolbar" value="false" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../creditapp-microservices-config" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/discovery-server/src/test/resources" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.creditApp" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\desktop\IdeaProjects\creditApp\credit-service\src\main\resources" />
-      <recent name="C:\Users\desktop\IdeaProjects\creditApp\config-server\src\main\resources" />
-      <recent name="C:\Users\desktop\IdeaProjects\creditApp\customer-service\src\main\resources" />
-      <recent name="C:\Users\desktop\IdeaProjects\creditApp\product-service\src\main\resources" />
-      <recent name="C:\Users\desktop\IdeaProjects\creditApp\discovery-server\src\main\java\com\example" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\desktop\IdeaProjects\creditApp\gateway-server\src\main\resources" />
-      <recent name="C:\Users\desktop\IdeaProjects\creditApp\discovery-server\src\main\resources" />
-      <recent name="C:\Users\desktop\IdeaProjects\creditApp\product-service\src\main\resources" />
-      <recent name="C:\Users\desktop\IdeaProjects\creditApp\customer-service\src\main\resources" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.creditApp.model.dto" />
+      <recent name="C:\Users\desktop\IdeaProjects\creditApp\discovery-server\src\test\resources" />
+      <recent name="C:\Users\desktop\IdeaProjects\creditApp\discovery-server" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ProductServiceApplication">
+  <component name="RunManager" selected="Application.ConfigServerApplication">
     <configuration name="ConfigServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.creditApp.ConfigServerApplication" />
       <module name="config-server" />
@@ -133,20 +111,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.creditApp.CustomerServiceApplication" />
-      <module name="customer-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.creditApp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DiscoveryServerApplication" type="Application" factoryName="Application" nameIsGenerated="true">
+    <configuration name="DiscoveryServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.creditApp.DiscoveryServerApplication" />
       <module name="discovery-server" />
       <extension name="coverage">
@@ -159,39 +124,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GatewayServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.creditApp.GatewayServerApplication" />
-      <module name="gateway-server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.creditApp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.creditApp.ProductServiceApplication" />
-      <module name="product-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.creditApp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="config-server/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="config-server/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ProductServiceApplication" />
-        <item itemvalue="Application.CustomerServiceApplication" />
-        <item itemvalue="Application.GatewayServerApplication" />
-        <item itemvalue="Application.CreditServiceApplication" />
         <item itemvalue="Application.ConfigServerApplication" />
+        <item itemvalue="Application.DiscoveryServerApplication" />
+        <item itemvalue="Application.CreditServiceApplication" />
+        <item itemvalue="Docker.config-server/Dockerfile" />
+        <item itemvalue="Docker.config-server/Dockerfile" />
       </list>
     </recent_temporary>
   </component>
@@ -200,222 +147,74 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2d327db2-0a4b-40f7-bef3-7a175e60f934" name="Default Changelist" comment="" />
-      <created>1594036395223</created>
+      <changelist id="99badef6-7a7d-4ae1-8d80-222fcf085fba" name="Default Changelist" comment="" />
+      <created>1596034973485</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1594036395223</updated>
+      <updated>1596034973485</updated>
     </task>
-    <task id="LOCAL-00001" summary="created 2 methods in controller: addCustomer(), getCustomerByCreditNumber()">
-      <created>1594044114585</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1594044114585</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Creation error handling&#10;- ErrorDetails&#10;- GlobalExceptionHandler&#10;Added ResponseEntity in controllers">
-      <created>1594228298277</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1594228298277</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Changing ports in &#10;- credit-service&#10;- customer-service">
-      <created>1594228478729</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1594228478729</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Created removeCustomer method">
-      <created>1594393805563</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1594393805563</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Created removeProduct method">
-      <created>1594393822016</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1594393822016</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Added restTemplate and some business logic in CreditServiceImpl.class">
-      <created>1594659129339</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1594659129339</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Change in expression creation">
-      <created>1594838919164</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1594838919164</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Creation of expressions and addition getCredit()">
-      <created>1594839045650</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1594839045650</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
-  <component name="Vcs.Log.History.Properties">
-    <option name="COLUMN_ORDER">
-      <list>
-        <option value="0" />
-        <option value="2" />
-        <option value="3" />
-        <option value="1" />
-      </list>
-    </option>
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="created 2 methods in controller: addCustomer(), getCustomerByCreditNumber()" />
-    <MESSAGE value="Creation error handling&#10;- ErrorDetails&#10;- GlobalExceptionHandler&#10;Added ResponseEntity in controllers" />
-    <MESSAGE value="Changing ports in &#10;- credit-service&#10;- customer-service" />
-    <MESSAGE value="Created removeCustomer method" />
-    <MESSAGE value="Created removeProduct method" />
-    <MESSAGE value="Added restTemplate and some business logic in CreditServiceImpl.class" />
-    <MESSAGE value="Change in expression creation" />
-    <MESSAGE value="Creation of expressions and addition getCredit()" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creation of expressions and addition getCredit()" />
+    <MESSAGE value="added Dockerfile and docker-compose files" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Dockerfile and docker-compose files" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="451" y="87" key="#Notifications" timestamp="1595352803041">
+    <state x="409" y="157" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597318169455">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="451" y="87" key="#Notifications/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1595352803041" />
-    <state x="451" y="87" key="#Project_Structure" timestamp="1595352213450">
+    <state x="409" y="157" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1597318169455" />
+    <state x="656" y="294" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597084887874">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="451" y="87" key="#Project_Structure/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1595352213450" />
-    <state x="451" y="87" key="#Scopes" timestamp="1595352633826">
+    <state x="656" y="294" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1597084887874" />
+    <state x="622" y="0" key="#config-server/Dockerfile" timestamp="1596040210210">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="451" y="87" key="#Scopes/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1595352633826" />
-    <state x="409" y="157" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594037319724">
+    <state x="622" y="0" key="#config-server/Dockerfile/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1596040210210" />
+    <state x="427" y="31" key="CommitChangelistDialog2" timestamp="1597324377583">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="409" y="157" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594037319724" />
-    <state x="717" y="151" key="#com.intellij.ide.util.MemberChooser" timestamp="1595089934932">
+    <state x="427" y="31" key="CommitChangelistDialog2/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1597324377583" />
+    <state x="686" y="207" key="FileChooserDialogImpl" timestamp="1597318168405">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="717" y="151" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1595089934932" />
-    <state x="673" y="128" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1594037944010">
+    <state x="686" y="207" key="FileChooserDialogImpl/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1597318168405" />
+    <state width="1863" height="132" key="GridCell.Tab.0.bottom" timestamp="1597324378024">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="673" y="128" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594037944010" />
-    <state x="454" y="420" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1594834912202">
+    <state width="1863" height="132" key="GridCell.Tab.0.bottom/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1597324378024" />
+    <state width="1863" height="132" key="GridCell.Tab.0.center" timestamp="1597324378021">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="454" y="420" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594834912202" />
-    <state x="701" y="367" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1594834920336">
+    <state width="1863" height="132" key="GridCell.Tab.0.center/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1597324378021" />
+    <state width="1863" height="132" key="GridCell.Tab.0.left" timestamp="1597324378020">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="701" y="367" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594834920336" />
-    <state x="569" y="1" width="1143" height="962" key="CommitChangelistDialog2" timestamp="1595174458906">
+    <state width="1863" height="132" key="GridCell.Tab.0.left/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1597324378020" />
+    <state width="1863" height="132" key="GridCell.Tab.0.right" timestamp="1597324378021">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="569" y="1" width="1143" height="962" key="CommitChangelistDialog2/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1595174458906" />
-    <state x="91" y="91" width="1738" height="848" key="DiffContextDialog" timestamp="1594044213934">
+    <state width="1863" height="132" key="GridCell.Tab.0.right/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1597324378021" />
+    <state x="311" y="0" key="SettingsEditor" timestamp="1596816026694">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="91" y="91" width="1738" height="848" key="DiffContextDialog/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594044213934" />
-    <state x="686" y="190" key="FileChooserDialogImpl" timestamp="1595429479371">
+    <state x="311" y="0" key="SettingsEditor/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1596816026694" />
+    <state x="451" y="179" key="Vcs.Push.Dialog.v2" timestamp="1597324407748">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="686" y="190" key="FileChooserDialogImpl/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1595429479371" />
-    <state x="738" y="409" key="Github.CreateGistDialog" timestamp="1594037186934">
+    <state x="451" y="179" key="Vcs.Push.Dialog.v2/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1597324407748" />
+    <state x="638" y="191" key="com.intellij.docker.deployment.ui.DockerPortBindingsField.v173.dialogSize" timestamp="1596040205323">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="738" y="409" key="Github.CreateGistDialog/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594037186934" />
-    <state width="1864" height="402" key="GridCell.Tab.0.bottom" timestamp="1595450831829">
+    <state x="638" y="191" key="com.intellij.docker.deployment.ui.DockerPortBindingsField.v173.dialogSize/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1596040205323" />
+    <state x="226" y="184" key="new project wizard" timestamp="1597078585310">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="402" key="GridCell.Tab.0.bottom/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1595450831829" />
-    <state width="1864" height="402" key="GridCell.Tab.0.center" timestamp="1595450831829">
+    <state x="226" y="184" key="new project wizard/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1597078585310" />
+    <state x="531" y="226" key="run.anything.popup" timestamp="1596037402084">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="402" key="GridCell.Tab.0.center/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1595450831829" />
-    <state width="1864" height="402" key="GridCell.Tab.0.left" timestamp="1595450831829">
-      <screen x="0" y="0" width="1920" height="1030" />
-    </state>
-    <state width="1864" height="402" key="GridCell.Tab.0.left/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1595450831829" />
-    <state width="1864" height="402" key="GridCell.Tab.0.right" timestamp="1595450831829">
-      <screen x="0" y="0" width="1920" height="1030" />
-    </state>
-    <state width="1864" height="402" key="GridCell.Tab.0.right/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1595450831829" />
-    <state width="1864" height="204" key="GridCell.Tab.1.bottom" timestamp="1595352748142">
-      <screen x="0" y="0" width="1920" height="1030" />
-    </state>
-    <state width="1864" height="204" key="GridCell.Tab.1.bottom/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1595352748142" />
-    <state width="1864" height="204" key="GridCell.Tab.1.center" timestamp="1595352748142">
-      <screen x="0" y="0" width="1920" height="1030" />
-    </state>
-    <state width="1864" height="204" key="GridCell.Tab.1.center/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1595352748142" />
-    <state width="1864" height="204" key="GridCell.Tab.1.left" timestamp="1595352748142">
-      <screen x="0" y="0" width="1920" height="1030" />
-    </state>
-    <state width="1864" height="204" key="GridCell.Tab.1.left/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1595352748142" />
-    <state width="1864" height="204" key="GridCell.Tab.1.right" timestamp="1595352748142">
-      <screen x="0" y="0" width="1920" height="1030" />
-    </state>
-    <state width="1864" height="204" key="GridCell.Tab.1.right/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1595352748142" />
-    <state x="891" y="119" key="RollbackChangesDialog" timestamp="1594044222865">
-      <screen x="0" y="0" width="1920" height="1030" />
-    </state>
-    <state x="891" y="119" key="RollbackChangesDialog/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594044222865" />
-    <state x="311" y="0" key="SettingsEditor" timestamp="1595352894647">
-      <screen x="0" y="0" width="1920" height="1030" />
-    </state>
-    <state x="311" y="0" key="SettingsEditor/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1595352894647" />
-    <state width="641" height="498" key="SwitcherDM" timestamp="1594654260795">
-      <screen x="0" y="0" width="1920" height="1030" />
-    </state>
-    <state width="641" height="498" key="SwitcherDM/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594654260795" />
-    <state x="451" y="179" key="Vcs.Push.Dialog.v2" timestamp="1594839047710">
-      <screen x="0" y="0" width="1920" height="1030" />
-    </state>
-    <state x="451" y="179" key="Vcs.Push.Dialog.v2/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594839047710" />
-    <state x="705" y="159" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1594834217528">
-      <screen x="0" y="0" width="1920" height="1030" />
-    </state>
-    <state x="705" y="159" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594834217528" />
-    <state x="227" y="32" key="new project wizard" timestamp="1595451051284">
-      <screen x="0" y="0" width="1920" height="1030" />
-    </state>
-    <state x="227" y="32" key="new project wizard/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1595451051284" />
-    <state x="531" y="226" key="run.anything.popup" timestamp="1594832085403">
-      <screen x="0" y="0" width="1920" height="1030" />
-    </state>
-    <state x="531" y="226" key="run.anything.popup/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594832085403" />
-    <state x="539" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1594834332652">
-      <screen x="0" y="0" width="1920" height="1030" />
-    </state>
-    <state x="539" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1594834332652" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/creditApp$DiscoveryServerApplication.ic" NAME="DiscoveryServerApplication Coverage Results" MODIFIED="1595352719981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.creditApp.*</FILTER>
-    </SUITE>
+    <state x="531" y="226" key="run.anything.popup/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1596037402084" />
   </component>
 </project>
