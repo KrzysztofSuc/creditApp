@@ -1,4 +1,11 @@
 ## CreditApp
+This project was created to learn and understand microservices architecture. The system allows you to draw a loan, download borrower's and credit details and delete it on the basis of a unique number.    
+
+It is planned to add a module responsible for logging in and creating authorization on the basis of JWT and create a Frontend based on Angular.
+
+### Functional services
+
+
 Method POST  
 http://localhost:4200/api/credit/add
 
