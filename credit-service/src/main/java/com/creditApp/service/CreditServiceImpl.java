@@ -49,7 +49,7 @@ public class CreditServiceImpl implements CreditService {
     @Override
     public CreditContainer getCredit(String creditNumber) {
         CreditContainer creditContainer = new CreditContainer();
-        if (creditRepository.getCreditByCreditNumber(creditNumber) != null) {
+        if (creditRepository.getCreditByCreditNumber(creditNumber).isPresent()) {
             try {
                 creditContainer.setProductDto(restTemplate
                         .getForEntity("http://product-service/{creditNumber}", ProductDto.class, creditNumber)
@@ -69,7 +69,7 @@ public class CreditServiceImpl implements CreditService {
 
     @Override
     public void removeCredit(String creditNumber) {
-        if (creditRepository.getCreditByCreditNumber(creditNumber) != null) {
+        if (creditRepository.getCreditByCreditNumber(creditNumber).isPresent()) {
             try {
                 restTemplate.exchange("http://product-service/{creditNumber}",
                         HttpMethod.DELETE, HttpEntity.EMPTY, String.class, creditNumber);
