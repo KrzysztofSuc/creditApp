@@ -2,7 +2,9 @@ package com.creditApp.security;
 
 import com.creditApp.model.User;
 import com.creditApp.model.dto.LoginDto;
+import com.creditApp.model.dto.ResponseDTO;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -18,9 +20,13 @@ import java.io.IOException;
 
 public class JsonObjectAuthenticationFilter extends UsernamePasswordAuthenticationFilter {
 
-    private AuthenticationManager authenticationManager;
-    private ObjectMapper objectMapper;
-    private JwtGenerator jwtGenerator;
+    private static final String TOKEN_HEADER = "Authorization";
+    private static final String TOKEN_PREFIX = "Bearer ";
+
+    private final AuthenticationManager authenticationManager;
+    private final ObjectMapper objectMapper;
+    private final JwtGenerator jwtGenerator;
+    private final ModelMapper modelMapper;
 
     public JsonObjectAuthenticationFilter(AuthenticationManager authenticationManager,
                                           @Value("${jwt.expirationTime}") int expirationTime,
@@ -28,6 +34,7 @@ public class JsonObjectAuthenticationFilter extends UsernamePasswordAuthenticati
         this.authenticationManager = authenticationManager;
         this.objectMapper = new ObjectMapper();
         this.jwtGenerator = new JwtGenerator(expirationTime, secret);
+        this.modelMapper = new ModelMapper();
     }
 
     @Override
@@ -52,7 +59,15 @@ public class JsonObjectAuthenticationFilter extends UsernamePasswordAuthenticati
                                             Authentication authResult) throws IOException, ServletException {
         User user = (User) authResult.getPrincipal();
         String token = jwtGenerator.generateToken(user);
-        response.addHeader("Authorization", "Bearer " + token);
+        response.addHeader(TOKEN_HEADER, TOKEN_PREFIX + token);
+        addUserDataIntoBody(response, user, token);
+    }
+
+    private void addUserDataIntoBody(HttpServletResponse response, User user, String token) throws IOException {
+        ResponseDTO userResponseDTO = modelMapper.map(user, ResponseDTO.class);
+        userResponseDTO.setToken(TOKEN_PREFIX + token);
+        objectMapper.writeValueAsString(userResponseDTO);
+        response.getWriter().write(objectMapper.writeValueAsString(userResponseDTO));
     }
 
 }

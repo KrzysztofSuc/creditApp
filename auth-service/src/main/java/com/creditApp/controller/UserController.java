@@ -17,8 +17,9 @@ public class UserController {
     private final UserService userService;
 
     @PostMapping("/save")
-    public ResponseEntity save(@RequestBody RegisterDto userDto) {
-        return ResponseEntity.status(HttpStatus.CREATED).body(userService.save(userDto));
+    public ResponseEntity save(@RequestBody RegisterDto registerDto) {
+        userService.save(registerDto);
+        return ResponseEntity.status(HttpStatus.CREATED).build();
     }
 
     @PostMapping("/login")

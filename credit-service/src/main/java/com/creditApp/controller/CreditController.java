@@ -32,4 +32,9 @@ public class CreditController {
         creditService.removeCredit(creditNumber);
         return ResponseEntity.status(HttpStatus.OK).build();
     }
+
+    @GetMapping("/hello")
+    public String hello (){
+        return "Hello World!";
+    }
 }
