@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.validation.Valid;
+
 @RestController
 @RequiredArgsConstructor
 public class UserController {
@@ -23,6 +25,6 @@ public class UserController {
     }
 
     @PostMapping("/login")
-    public void login(@RequestBody LoginDto loginDto) {
+    public void login(@Valid @RequestBody LoginDto loginDto) {
     }
 }

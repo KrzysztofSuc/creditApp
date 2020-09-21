@@ -6,7 +6,6 @@ import com.creditApp.model.dto.ResponseDTO;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
@@ -23,15 +22,13 @@ public class JsonObjectAuthenticationFilter extends UsernamePasswordAuthenticati
     private static final String TOKEN_HEADER = "Authorization";
     private static final String TOKEN_PREFIX = "Bearer ";
 
-    private final AuthenticationManager authenticationManager;
     private final ObjectMapper objectMapper;
     private final JwtGenerator jwtGenerator;
     private final ModelMapper modelMapper;
 
-    public JsonObjectAuthenticationFilter(AuthenticationManager authenticationManager,
-                                          @Value("${jwt.expirationTime}") int expirationTime,
-                                          @Value("${jwt.secret}") String secret) {
-        this.authenticationManager = authenticationManager;
+    public JsonObjectAuthenticationFilter(
+            @Value("${jwt.expirationTime}") int expirationTime,
+            @Value("${jwt.secret}") String secret) {
         this.objectMapper = new ObjectMapper();
         this.jwtGenerator = new JwtGenerator(expirationTime, secret);
         this.modelMapper = new ModelMapper();
@@ -46,7 +43,8 @@ public class JsonObjectAuthenticationFilter extends UsernamePasswordAuthenticati
                     loginDto.getEmail(),
                     loginDto.getPassword()
             );
-            return authenticationManager.authenticate(authenticationToken);
+            setDetails(request, authenticationToken);
+            return this.getAuthenticationManager().authenticate(authenticationToken);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
