@@ -10,16 +10,16 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.security.web.header.writers.StaticHeadersWriter;
 
-import javax.servlet.http.HttpServletResponse;
-
 @Configuration
 @EnableWebSecurity(debug = false)
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     private final String secret;
+    private final CustomAuthenticationEntryPoint entryPoint;
 
-    public SecurityConfig(@Value("${jwt.secret}") String secret) {
+    public SecurityConfig(@Value("${jwt.secret}") String secret, CustomAuthenticationEntryPoint entryPoint) {
         this.secret = secret;
+        this.entryPoint = entryPoint;
     }
 
     @Override
@@ -31,8 +31,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .disable()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
-                .exceptionHandling().authenticationEntryPoint(
-                (request, response, e) -> response.sendError(HttpServletResponse.SC_UNAUTHORIZED))
+                .exceptionHandling().authenticationEntryPoint(entryPoint)
                 .and()
                 .addFilterAfter(new JwtAuthorizationFilter(authenticationManager(), secret),
                         UsernamePasswordAuthenticationFilter.class)
@@ -49,5 +48,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.inMemoryAuthentication();
     }
+
 }
 

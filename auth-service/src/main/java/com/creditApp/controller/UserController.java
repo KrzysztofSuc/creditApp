@@ -18,8 +18,8 @@ public class UserController {
 
     private final UserService userService;
 
-    @PostMapping("/save")
-    public ResponseEntity save(@RequestBody RegisterDto registerDto) {
+    @PostMapping("/")
+    public ResponseEntity register(@RequestBody RegisterDto registerDto) {
         userService.save(registerDto);
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }

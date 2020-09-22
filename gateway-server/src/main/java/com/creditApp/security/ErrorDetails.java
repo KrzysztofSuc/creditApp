@@ -1,9 +1,7 @@
-package com.creditApp.exception;
+package com.creditApp.security;
 
 
 import lombok.*;
-
-import java.util.Date;
 
 @Getter
 @Setter

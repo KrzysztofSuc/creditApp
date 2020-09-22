@@ -1,6 +1,7 @@
 package com.creditApp.security;
 
 import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.JwtException;
 import io.jsonwebtoken.Jwts;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -42,20 +43,24 @@ public class JwtAuthorizationFilter extends BasicAuthenticationFilter {
     }
 
     private UsernamePasswordAuthenticationToken getAuthentication(HttpServletRequest request) {
-        String token = request.getHeader(TOKEN_HEADER);
-        if (token != null && token.startsWith(TOKEN_PREFIX)) {
-            Claims claims = Jwts.parser()
-                    .setSigningKey(secret)
-                    .parseClaimsJws(token.replace(TOKEN_PREFIX, ""))
-                    .getBody();
-            if (claims.getSubject() != null) {
-                List<String> role = (List<String>) claims.get("role");
-                return new UsernamePasswordAuthenticationToken(claims.getSubject(),"",
-                        role
-                                .stream()
-                                .map(SimpleGrantedAuthority::new)
-                                .collect(Collectors.toList()));
+        try {
+            String token = request.getHeader(TOKEN_HEADER);
+            if (token != null && token.startsWith(TOKEN_PREFIX)) {
+                Claims claims = Jwts.parser()
+                        .setSigningKey(secret)
+                        .parseClaimsJws(token.replace(TOKEN_PREFIX, ""))
+                        .getBody();
+                if (claims.getSubject() != null) {
+                    List<String> role = (List<String>) claims.get("role");
+                    return new UsernamePasswordAuthenticationToken(claims.getSubject(), "",
+                            role
+                                    .stream()
+                                    .map(SimpleGrantedAuthority::new)
+                                    .collect(Collectors.toList()));
+                }
             }
+        } catch (Exception e) {
+            throw new JwtException(e.getMessage());
         }
         return null;
     }

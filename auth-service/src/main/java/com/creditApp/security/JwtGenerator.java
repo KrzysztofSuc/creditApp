@@ -7,7 +7,6 @@ import io.jsonwebtoken.SignatureAlgorithm;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import java.util.Base64;
 import java.util.Collections;
 import java.util.Date;
 
@@ -26,10 +25,9 @@ public class JwtGenerator {
     public String generateToken(User user) {
         Claims claims = Jwts.claims().setSubject(user.getEmail());
         claims.put("role", user.getRole());
-        //String encodedString = Base64.getEncoder().encodeToString(secret.getBytes());
         return Jwts.builder()
                 .setSubject(user.getEmail())
-                .claim("role", Collections.singletonList("ROLE_"+ user.getRole()))
+                .claim("role", Collections.singletonList("ROLE_" + user.getRole()))
                 .setExpiration(new Date(System.currentTimeMillis() + expirationTime))
                 .signWith(SignatureAlgorithm.HS512, secret)
                 .compact();

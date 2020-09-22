@@ -10,22 +10,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99badef6-7a7d-4ae1-8d80-222fcf085fba" name="Default Changelist" comment="added Dockerfile and docker-compose files">
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/creditApp/DataLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/creditApp/exception/ErrorDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/creditApp/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/creditApp/security/CustomAuthenticationFailureHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/resources/validationMessages.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-server/src/main/java/com/creditApp/security/CustomAuthenticationEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-server/src/main/java/com/creditApp/security/ErrorDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/creditApp/AuthServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/creditApp/AuthServiceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/creditApp/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/creditApp/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/creditApp/model/dto/LoginDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/creditApp/model/dto/LoginDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/creditApp/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/creditApp/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/creditApp/security/JsonObjectAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/creditApp/security/JsonObjectAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/creditApp/exception/ErrorDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/creditApp/exception/ErrorDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/creditApp/security/CustomAuthenticationFailureHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/creditApp/security/CustomAuthenticationFailureHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/creditApp/security/JwtGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/creditApp/security/JwtGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/creditApp/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/creditApp/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/creditApp/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/creditApp/service/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/credit-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/credit-service/src/main/resources/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/creditApp/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/creditApp/exception/GlobalExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/resources/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/discovery-server/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/com/creditApp/security/JwtAuthorizationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-server/src/main/java/com/creditApp/security/JwtAuthorizationFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/com/creditApp/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-server/src/main/java/com/creditApp/security/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gateway-server/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-server/src/main/resources/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/bootstrap.yml" afterDir="false" />
@@ -62,6 +61,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ToolWindowPull Requests.ShowToolbar" value="false" />
@@ -73,21 +73,38 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\desktop\IdeaProjects\creditApp\auth-servicce\src\main\resources" />
-      <recent name="C:\Users\desktop\IdeaProjects\creditApp\auth-servicce\src\main\java\com\creditApp" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\desktop\IdeaProjects\creditApp\auth-service\src\main\java\com\creditApp" />
       <recent name="C:\Users\desktop\IdeaProjects\creditApp\auth-service\src\main\resources" />
       <recent name="C:\Users\desktop\IdeaProjects\creditApp\discovery-server\src\test\resources" />
       <recent name="C:\Users\desktop\IdeaProjects\creditApp\discovery-server" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.creditApp.security" />
+      <recent name="com.creditApp.exception" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\desktop\IdeaProjects\creditApp\auth-servicce\src\main\resources" />
+      <recent name="C:\Users\desktop\IdeaProjects\creditApp\auth-servicce\src\main\java\com\creditApp" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.GatewayServerApplication">
     <configuration name="AuthServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.creditApp.AuthServiceApplication" />
       <module name="auth-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.creditApp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreditServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.creditApp.CreditServiceApplication" />
+      <module name="credit-service" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.creditApp.*" />
@@ -154,6 +171,7 @@
       <list>
         <item itemvalue="Application.GatewayServerApplication" />
         <item itemvalue="Application.AuthServiceApplication" />
+        <item itemvalue="Application.CreditServiceApplication" />
         <item itemvalue="Application.ProductServiceApplication" />
         <item itemvalue="Application.CustomerServiceApplication" />
       </list>
@@ -199,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600368269312</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update security">
+      <created>1600719619800</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1600719619800</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -220,7 +245,8 @@
     <MESSAGE value="added JsonObjectAuthenticationFilter, SecurityConfig, save() and some Dto's" />
     <MESSAGE value="in repository changed find method to Optional" />
     <MESSAGE value="continuous development of login" />
-    <option name="LAST_COMMIT_MESSAGE" value="continuous development of login" />
+    <MESSAGE value="update security" />
+    <option name="LAST_COMMIT_MESSAGE" value="update security" />
   </component>
   <component name="WindowStateProjectService">
     <state x="409" y="157" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597318169455">
@@ -231,10 +257,10 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="656" y="294" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1597084887874" />
-    <state x="717" y="213" width="883" height="714" key="#com.intellij.ide.util.MemberChooser" timestamp="1600716744653">
+    <state x="717" y="213" width="883" height="714" key="#com.intellij.ide.util.MemberChooser" timestamp="1600793783451">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="717" y="213" width="883" height="714" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600716744653" />
+    <state x="717" y="213" width="883" height="714" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600793783451" />
     <state x="636" y="233" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1600093895162">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
@@ -243,6 +269,14 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="42" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600718184685" />
+    <state x="623" y="197" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600798523130">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state x="623" y="197" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600798523130" />
+    <state x="623" y="197" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1600780725386">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state x="623" y="197" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600780725386" />
     <state x="622" y="0" key="#config-server/Dockerfile" timestamp="1596040210210">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
@@ -251,10 +285,10 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="651" y="299" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600452678954" />
-    <state x="427" y="0" key="CommitChangelistDialog2" timestamp="1600368267996">
+    <state x="427" y="0" key="CommitChangelistDialog2" timestamp="1600719618855">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="427" y="0" key="CommitChangelistDialog2/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600368267996" />
+    <state x="427" y="0" key="CommitChangelistDialog2/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600719618855" />
     <state x="91" y="91" width="1738" height="848" key="DiffContextDialog" timestamp="1598292964615">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
@@ -264,45 +298,46 @@
     </state>
     <state x="686" y="207" key="FileChooserDialogImpl/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1597318168405" />
     <state x="3258" y="261" key="FileChooserDialogImpl/0.0.1920.1030/2400.0.2400.1300@2400.0.2400.1300" timestamp="1598294518523" />
-    <state width="1864" height="283" key="GridCell.Tab.0.bottom" timestamp="1600719191371">
+    <state width="1864" height="252" key="GridCell.Tab.0.bottom" timestamp="1600802067894">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="283" key="GridCell.Tab.0.bottom/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600719191371" />
+    <state width="1864" height="252" key="GridCell.Tab.0.bottom/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600802067894" />
     <state width="2343" height="241" key="GridCell.Tab.0.bottom/0.0.1920.1030/2400.0.2400.1300@2400.0.2400.1300" timestamp="1598295650386" />
-    <state width="1864" height="283" key="GridCell.Tab.0.center" timestamp="1600719191371">
+    <state width="1864" height="252" key="GridCell.Tab.0.center" timestamp="1600802067894">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="283" key="GridCell.Tab.0.center/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600719191371" />
+    <state width="1864" height="252" key="GridCell.Tab.0.center/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600802067894" />
     <state width="2343" height="241" key="GridCell.Tab.0.center/0.0.1920.1030/2400.0.2400.1300@2400.0.2400.1300" timestamp="1598295650376" />
-    <state width="1864" height="283" key="GridCell.Tab.0.left" timestamp="1600719191371">
+    <state width="1864" height="252" key="GridCell.Tab.0.left" timestamp="1600802067894">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="283" key="GridCell.Tab.0.left/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600719191371" />
+    <state width="1864" height="252" key="GridCell.Tab.0.left/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600802067894" />
     <state width="2343" height="241" key="GridCell.Tab.0.left/0.0.1920.1030/2400.0.2400.1300@2400.0.2400.1300" timestamp="1598295650376" />
-    <state width="1864" height="283" key="GridCell.Tab.0.right" timestamp="1600719191371">
+    <state width="1864" height="252" key="GridCell.Tab.0.right" timestamp="1600802067894">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="283" key="GridCell.Tab.0.right/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600719191371" />
+    <state width="1864" height="252" key="GridCell.Tab.0.right/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600802067894" />
     <state width="2343" height="241" key="GridCell.Tab.0.right/0.0.1920.1030/2400.0.2400.1300@2400.0.2400.1300" timestamp="1598295650376" />
-    <state width="1864" height="283" key="GridCell.Tab.1.bottom" timestamp="1600719130508">
+    <state width="1864" height="283" key="GridCell.Tab.1.bottom" timestamp="1600799185095">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="283" key="GridCell.Tab.1.bottom/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600719130508" />
-    <state width="1864" height="283" key="GridCell.Tab.1.center" timestamp="1600719130508">
+    <state width="1864" height="283" key="GridCell.Tab.1.bottom/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600799185095" />
+    <state width="1864" height="283" key="GridCell.Tab.1.center" timestamp="1600799185095">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="283" key="GridCell.Tab.1.center/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600719130508" />
-    <state width="1864" height="283" key="GridCell.Tab.1.left" timestamp="1600719130508">
+    <state width="1864" height="283" key="GridCell.Tab.1.center/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600799185095" />
+    <state width="1864" height="283" key="GridCell.Tab.1.left" timestamp="1600799185095">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="283" key="GridCell.Tab.1.left/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600719130508" />
-    <state width="1864" height="283" key="GridCell.Tab.1.right" timestamp="1600719130508">
+    <state width="1864" height="283" key="GridCell.Tab.1.left/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600799185095" />
+    <state width="1864" height="283" key="GridCell.Tab.1.right" timestamp="1600799185095">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="283" key="GridCell.Tab.1.right/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600719130508" />
-    <state x="3013" y="217" key="Maven.ArtifactSearchDialog" timestamp="1598294162812">
-      <screen x="2400" y="0" width="2400" height="1300" />
+    <state width="1864" height="283" key="GridCell.Tab.1.right/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600799185095" />
+    <state x="490" y="165" key="Maven.ArtifactSearchDialog" timestamp="1600784580564">
+      <screen x="0" y="0" width="1920" height="1030" />
     </state>
+    <state x="490" y="165" key="Maven.ArtifactSearchDialog/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600784580564" />
     <state x="3013" y="217" key="Maven.ArtifactSearchDialog/0.0.1920.1030/2400.0.2400.1300@2400.0.2400.1300" timestamp="1598294162812" />
     <state x="3028" y="155" key="NewModule_or_Project.wizard" timestamp="1598294524366">
       <screen x="2400" y="0" width="2400" height="1300" />
@@ -318,10 +353,10 @@
     </state>
     <state x="311" y="0" key="SettingsEditor/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1598377181514" />
     <state x="2789" y="0" key="SettingsEditor/0.0.1920.1030/2400.0.2400.1300@2400.0.2400.1300" timestamp="1598294530127" />
-    <state x="451" y="179" key="Vcs.Push.Dialog.v2" timestamp="1600368271218">
+    <state x="451" y="179" key="Vcs.Push.Dialog.v2" timestamp="1600719625167">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="451" y="179" key="Vcs.Push.Dialog.v2/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600368271218" />
+    <state x="451" y="179" key="Vcs.Push.Dialog.v2/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600719625167" />
     <state x="638" y="191" key="com.intellij.docker.deployment.ui.DockerPortBindingsField.v173.dialogSize" timestamp="1596040205323">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
@@ -335,10 +370,10 @@
     </state>
     <state x="226" y="184" key="new project wizard/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600339246039" />
     <state x="2683" y="232" key="new project wizard/0.0.1920.1030/2400.0.2400.1300@2400.0.2400.1300" timestamp="1598293277002" />
-    <state x="638" y="54" key="refactoring.ChangeSignatureDialog" timestamp="1600099815569">
+    <state x="638" y="54" key="refactoring.ChangeSignatureDialog" timestamp="1600798073605">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="638" y="54" key="refactoring.ChangeSignatureDialog/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600099815569" />
+    <state x="638" y="54" key="refactoring.ChangeSignatureDialog/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600798073605" />
     <state x="531" y="226" key="run.anything.popup" timestamp="1598801005372">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
