@@ -29,6 +29,9 @@ public class CustomAuthenticationEntryPoint implements AuthenticationEntryPoint 
                 .timestamp(DateTimeFormatter.ofPattern("MM-dd-yyyy HH:mm:ss", Locale.ENGLISH)
                         .format(LocalDateTime.now()))
                 .build();
+        if(httpServletRequest.getAttribute("expired") != null){
+            errorDetails.setMessage(String.valueOf(httpServletRequest.getAttribute("expired")));
+        }
         httpServletResponse.setStatus(HttpStatus.UNAUTHORIZED.value());
         httpServletResponse.setContentType("application/json");
         httpServletResponse.setCharacterEncoding("UTF-8");

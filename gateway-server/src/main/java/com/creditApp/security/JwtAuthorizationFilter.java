@@ -1,7 +1,7 @@
 package com.creditApp.security;
 
 import io.jsonwebtoken.Claims;
-import io.jsonwebtoken.JwtException;
+import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.Jwts;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -42,7 +42,7 @@ public class JwtAuthorizationFilter extends BasicAuthenticationFilter {
         chain.doFilter(request, response);
     }
 
-    private UsernamePasswordAuthenticationToken getAuthentication(HttpServletRequest request) {
+    private UsernamePasswordAuthenticationToken getAuthentication(HttpServletRequest request) throws ServletException {
         try {
             String token = request.getHeader(TOKEN_HEADER);
             if (token != null && token.startsWith(TOKEN_PREFIX)) {
@@ -59,8 +59,8 @@ public class JwtAuthorizationFilter extends BasicAuthenticationFilter {
                                     .collect(Collectors.toList()));
                 }
             }
-        } catch (Exception e) {
-            throw new JwtException(e.getMessage());
+        } catch (ExpiredJwtException e) {
+            request.setAttribute("expired", e.getMessage());
         }
         return null;
     }

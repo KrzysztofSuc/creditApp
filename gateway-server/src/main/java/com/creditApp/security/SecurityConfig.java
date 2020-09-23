@@ -15,11 +15,10 @@ import org.springframework.security.web.header.writers.StaticHeadersWriter;
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     private final String secret;
-    private final CustomAuthenticationEntryPoint entryPoint;
 
-    public SecurityConfig(@Value("${jwt.secret}") String secret, CustomAuthenticationEntryPoint entryPoint) {
+
+    public SecurityConfig(@Value("${jwt.secret}") String secret) {
         this.secret = secret;
-        this.entryPoint = entryPoint;
     }
 
     @Override
@@ -31,7 +30,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .disable()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
-                .exceptionHandling().authenticationEntryPoint(entryPoint)
+                .exceptionHandling().authenticationEntryPoint(new CustomAuthenticationEntryPoint())
                 .and()
                 .addFilterAfter(new JwtAuthorizationFilter(authenticationManager(), secret),
                         UsernamePasswordAuthenticationFilter.class)
