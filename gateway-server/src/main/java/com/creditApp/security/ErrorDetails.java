@@ -1,6 +1,5 @@
 package com.creditApp.security;
 
-
 import lombok.*;
 
 @Getter

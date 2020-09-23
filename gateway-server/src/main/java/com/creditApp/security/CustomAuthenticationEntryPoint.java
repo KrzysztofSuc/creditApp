@@ -1,6 +1,5 @@
 package com.creditApp.security;
 
-
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.core.AuthenticationException;
@@ -17,7 +16,6 @@ import java.util.Locale;
 
 @Component
 public class CustomAuthenticationEntryPoint implements AuthenticationEntryPoint {
-
 
     @Override
     public void commence(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse,

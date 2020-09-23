@@ -16,7 +16,7 @@
       <change beforePath="$PROJECT_DIR$/customer-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/resources/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/discovery-server/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/src/main/resources/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/com/creditApp/security/CustomAuthenticationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-server/src/main/java/com/creditApp/security/CustomAuthenticationEntryPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/com/creditApp/security/JwtAuthorizationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-server/src/main/java/com/creditApp/security/JwtAuthorizationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/com/creditApp/security/ErrorDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-server/src/main/java/com/creditApp/security/ErrorDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/com/creditApp/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-server/src/main/java/com/creditApp/security/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gateway-server/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-server/src/main/resources/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/bootstrap.yml" afterDir="false" />
@@ -80,7 +80,7 @@
       <recent name="C:\Users\desktop\IdeaProjects\creditApp\auth-servicce\src\main\java\com\creditApp" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GatewayServerApplication">
+  <component name="RunManager" selected="Application.AuthServiceApplication">
     <configuration name="AuthServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.creditApp.AuthServiceApplication" />
       <module name="auth-service" />
@@ -161,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AuthServiceApplication" />
         <item itemvalue="Application.GatewayServerApplication" />
         <item itemvalue="Application.ProductServiceApplication" />
         <item itemvalue="Application.CustomerServiceApplication" />
         <item itemvalue="Application.CreditServiceApplication" />
-        <item itemvalue="Application.AuthServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -223,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600802243298</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added Dockerfile and docker-compose files">
+      <created>1600886039823</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1600886039823</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -239,13 +246,13 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added Dockerfile and docker-compose files" />
     <MESSAGE value="created auth-service" />
     <MESSAGE value="added JsonObjectAuthenticationFilter, SecurityConfig, save() and some Dto's" />
     <MESSAGE value="in repository changed find method to Optional" />
     <MESSAGE value="continuous development of login" />
     <MESSAGE value="update security" />
-    <option name="LAST_COMMIT_MESSAGE" value="update security" />
+    <MESSAGE value="added Dockerfile and docker-compose files" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Dockerfile and docker-compose files" />
   </component>
   <component name="WindowStateProjectService">
     <state x="409" y="157" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597318169455">
@@ -284,10 +291,10 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="651" y="299" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600452678954" />
-    <state x="427" y="0" key="CommitChangelistDialog2" timestamp="1600802242179">
+    <state x="427" y="0" key="CommitChangelistDialog2" timestamp="1600886037680">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="427" y="0" key="CommitChangelistDialog2/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600802242179" />
+    <state x="427" y="0" key="CommitChangelistDialog2/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600886037680" />
     <state x="91" y="91" width="1738" height="848" key="DiffContextDialog" timestamp="1598292964615">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
@@ -297,25 +304,25 @@
     </state>
     <state x="686" y="207" key="FileChooserDialogImpl/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1597318168405" />
     <state x="3258" y="261" key="FileChooserDialogImpl/0.0.1920.1030/2400.0.2400.1300@2400.0.2400.1300" timestamp="1598294518523" />
-    <state width="1864" height="263" key="GridCell.Tab.0.bottom" timestamp="1600885824188">
+    <state width="1864" height="76" key="GridCell.Tab.0.bottom" timestamp="1600886399703">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="263" key="GridCell.Tab.0.bottom/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600885824188" />
+    <state width="1864" height="76" key="GridCell.Tab.0.bottom/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600886399703" />
     <state width="2343" height="241" key="GridCell.Tab.0.bottom/0.0.1920.1030/2400.0.2400.1300@2400.0.2400.1300" timestamp="1598295650386" />
-    <state width="1864" height="263" key="GridCell.Tab.0.center" timestamp="1600885824188">
+    <state width="1864" height="76" key="GridCell.Tab.0.center" timestamp="1600886399703">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="263" key="GridCell.Tab.0.center/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600885824188" />
+    <state width="1864" height="76" key="GridCell.Tab.0.center/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600886399703" />
     <state width="2343" height="241" key="GridCell.Tab.0.center/0.0.1920.1030/2400.0.2400.1300@2400.0.2400.1300" timestamp="1598295650376" />
-    <state width="1864" height="263" key="GridCell.Tab.0.left" timestamp="1600885824188">
+    <state width="1864" height="76" key="GridCell.Tab.0.left" timestamp="1600886399703">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="263" key="GridCell.Tab.0.left/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600885824188" />
+    <state width="1864" height="76" key="GridCell.Tab.0.left/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600886399703" />
     <state width="2343" height="241" key="GridCell.Tab.0.left/0.0.1920.1030/2400.0.2400.1300@2400.0.2400.1300" timestamp="1598295650376" />
-    <state width="1864" height="263" key="GridCell.Tab.0.right" timestamp="1600885824188">
+    <state width="1864" height="76" key="GridCell.Tab.0.right" timestamp="1600886399703">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="263" key="GridCell.Tab.0.right/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600885824188" />
+    <state width="1864" height="76" key="GridCell.Tab.0.right/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600886399703" />
     <state width="2343" height="241" key="GridCell.Tab.0.right/0.0.1920.1030/2400.0.2400.1300@2400.0.2400.1300" timestamp="1598295650376" />
     <state width="1864" height="283" key="GridCell.Tab.1.bottom" timestamp="1600802608769">
       <screen x="0" y="0" width="1920" height="1030" />
@@ -352,10 +359,10 @@
     </state>
     <state x="311" y="0" key="SettingsEditor/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1598377181514" />
     <state x="2789" y="0" key="SettingsEditor/0.0.1920.1030/2400.0.2400.1300@2400.0.2400.1300" timestamp="1598294530127" />
-    <state x="451" y="179" key="Vcs.Push.Dialog.v2" timestamp="1600802245070">
+    <state x="451" y="179" key="Vcs.Push.Dialog.v2" timestamp="1600886041395">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="451" y="179" key="Vcs.Push.Dialog.v2/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600802245070" />
+    <state x="451" y="179" key="Vcs.Push.Dialog.v2/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600886041395" />
     <state x="638" y="191" key="com.intellij.docker.deployment.ui.DockerPortBindingsField.v173.dialogSize" timestamp="1596040205323">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>

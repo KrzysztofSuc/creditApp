@@ -16,7 +16,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     private final String secret;
 
-
     public SecurityConfig(@Value("${jwt.secret}") String secret) {
         this.secret = secret;
     }
