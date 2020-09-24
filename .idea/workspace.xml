@@ -10,27 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99badef6-7a7d-4ae1-8d80-222fcf085fba" name="Default Changelist" comment="added Dockerfile and docker-compose files">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hdrhistogram_HdrHistogram_2_1_9.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_core_1_5_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_2_3_3_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_autoconfigure_2_3_3_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_2_3_3_RELEASE.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credit-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/credit-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credit-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/credit-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/test/java/com/creditApp/AuthServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/test/java/com/creditApp/ConfigServerApplicationTests.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/creditApp/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/creditApp/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/discovery-server/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gateway-server/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-server/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/bootstrap.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +56,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ToolWindowPull Requests.ShowToolbar" value="false" />
     <property name="last.edited.regexp" value="uczenks29@wp.pl" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/auth-service/src/main/java/com/creditApp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/auth-service" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -85,16 +72,17 @@
       <recent name="com.creditApp.exception" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\desktop\IdeaProjects\creditApp\auth-service" />
       <recent name="C:\Users\desktop\IdeaProjects\creditApp\auth-service\src\main\java\com\creditApp" />
       <recent name="C:\Users\desktop\IdeaProjects\creditApp\auth-service\src\main\resources" />
       <recent name="C:\Users\desktop\IdeaProjects\creditApp\discovery-server\src\test\resources" />
       <recent name="C:\Users\desktop\IdeaProjects\creditApp\discovery-server" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GatewayServerApplication">
-    <configuration name="AuthServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.creditApp.AuthServiceApplication" />
-      <module name="auth-service" />
+  <component name="RunManager" selected="Application.DiscoveryServerApplication">
+    <configuration name="ConfigServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.creditApp.ConfigServerApplication" />
+      <module name="config-server" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.creditApp.*" />
@@ -172,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ConfigServerApplication" />
         <item itemvalue="Application.GatewayServerApplication" />
         <item itemvalue="Application.ProductServiceApplication" />
         <item itemvalue="Application.CustomerServiceApplication" />
         <item itemvalue="Application.CreditServiceApplication" />
-        <item itemvalue="Application.AuthServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -248,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600886992087</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="update bootstrap.yml and cleaning pom.xml">
+      <created>1600943306696</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1600943306696</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -270,7 +265,8 @@
     <MESSAGE value="continuous development of login" />
     <MESSAGE value="added Dockerfile and docker-compose files" />
     <MESSAGE value="update security" />
-    <option name="LAST_COMMIT_MESSAGE" value="update security" />
+    <MESSAGE value="update bootstrap.yml and cleaning pom.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="update bootstrap.yml and cleaning pom.xml" />
   </component>
   <component name="WindowStateProjectService">
     <state x="409" y="157" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597318169455">
@@ -309,10 +305,10 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="651" y="299" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600452678954" />
-    <state x="427" y="0" key="CommitChangelistDialog2" timestamp="1600942989288">
+    <state x="427" y="0" key="CommitChangelistDialog2" timestamp="1600943305684">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="427" y="0" key="CommitChangelistDialog2/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600942989288" />
+    <state x="427" y="0" key="CommitChangelistDialog2/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600943305684" />
     <state x="91" y="91" width="1738" height="848" key="DiffContextDialog" timestamp="1598292964615">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
@@ -322,25 +318,25 @@
     </state>
     <state x="686" y="207" key="FileChooserDialogImpl/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1597318168405" />
     <state x="3258" y="261" key="FileChooserDialogImpl/0.0.1920.1030/2400.0.2400.1300@2400.0.2400.1300" timestamp="1598294518523" />
-    <state width="1864" height="439" key="GridCell.Tab.0.bottom" timestamp="1600942784395">
+    <state width="1864" height="301" key="GridCell.Tab.0.bottom" timestamp="1600957923079">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="439" key="GridCell.Tab.0.bottom/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600942784395" />
+    <state width="1864" height="301" key="GridCell.Tab.0.bottom/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600957923079" />
     <state width="2343" height="241" key="GridCell.Tab.0.bottom/0.0.1920.1030/2400.0.2400.1300@2400.0.2400.1300" timestamp="1598295650386" />
-    <state width="1864" height="439" key="GridCell.Tab.0.center" timestamp="1600942784395">
+    <state width="1864" height="301" key="GridCell.Tab.0.center" timestamp="1600957923078">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="439" key="GridCell.Tab.0.center/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600942784395" />
+    <state width="1864" height="301" key="GridCell.Tab.0.center/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600957923078" />
     <state width="2343" height="241" key="GridCell.Tab.0.center/0.0.1920.1030/2400.0.2400.1300@2400.0.2400.1300" timestamp="1598295650376" />
-    <state width="1864" height="439" key="GridCell.Tab.0.left" timestamp="1600942784395">
+    <state width="1864" height="301" key="GridCell.Tab.0.left" timestamp="1600957923078">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="439" key="GridCell.Tab.0.left/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600942784395" />
+    <state width="1864" height="301" key="GridCell.Tab.0.left/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600957923078" />
     <state width="2343" height="241" key="GridCell.Tab.0.left/0.0.1920.1030/2400.0.2400.1300@2400.0.2400.1300" timestamp="1598295650376" />
-    <state width="1864" height="439" key="GridCell.Tab.0.right" timestamp="1600942784395">
+    <state width="1864" height="301" key="GridCell.Tab.0.right" timestamp="1600957923079">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="439" key="GridCell.Tab.0.right/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600942784395" />
+    <state width="1864" height="301" key="GridCell.Tab.0.right/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600957923079" />
     <state width="2343" height="241" key="GridCell.Tab.0.right/0.0.1920.1030/2400.0.2400.1300@2400.0.2400.1300" timestamp="1598295650376" />
     <state width="1864" height="283" key="GridCell.Tab.1.bottom" timestamp="1600802608769">
       <screen x="0" y="0" width="1920" height="1030" />

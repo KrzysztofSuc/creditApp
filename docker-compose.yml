@@ -6,14 +6,14 @@ services:
     ports:
     - "8888:8888"
   discovery-server:
-    image: gitim21/discovery-server:1.0
+    image: gitim21/discovery-server:1.1
     restart: always
     links:
       - config-server
     ports:
     - "8761:8761"
   gateway-server:
-    image: gitim21/gateway-server:1.0
+    image: gitim21/gateway-server:1.1
     restart: always
     links:
       - config-server
@@ -21,7 +21,7 @@ services:
     ports:
     - "4200:4200"
   credit-services:
-    image: gitim21/credit-service:1.0
+    image: gitim21/credit-service:1.1
     restart: always
     links:
       - config-server
@@ -35,8 +35,23 @@ services:
       MYSQL_PASSWORD: root
       MYSQL_DATABASE: creditdb
       MYSQL_ROOT_PASSWORD: root
+  auth-services:
+    image: gitim21/auth-service:1.0
+    restart: always
+    links:
+      - config-server
+      - discovery-server
+      - gateway-server
+      - auth-db
+  auth-db:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_PASSWORD: root
+      MYSQL_DATABASE: authdb
+      MYSQL_ROOT_PASSWORD: root
   customer-services:
-    image: gitim21/customer-service:1.0
+    image: gitim21/customer-service:1.1
     restart: always
     links:
       - config-server
@@ -51,7 +66,7 @@ services:
       MYSQL_DATABASE: customerdb
       MYSQL_ROOT_PASSWORD: root
   product-services:
-    image: gitim21/product-service:1.0
+    image: gitim21/product-service:1.1
     restart: always
     links:
       - config-server
