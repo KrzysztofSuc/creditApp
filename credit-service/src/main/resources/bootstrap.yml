@@ -7,18 +7,3 @@ spring:
       fail-fast: true
       retry:
         max-attempts: 20
-#    bus:
-#      enabled: true
-#      refresh:
-#        enabled: true
-#  rabbitmq:
-#    host: localhost
-#    port: 5672
-#    username: guest
-#    password: guest
-#management:
-#  endpoints:
-#    web:
-#      exposure:
-#        include: "*"
-

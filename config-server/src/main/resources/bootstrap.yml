@@ -8,10 +8,3 @@ spring:
       server:
         git:
           uri: https://github.com/KrzysztofSuc/creditapp-microservices-config
-#    bus:
-#      enabled: true
-#  rabbitmq:
-#    hostname: localhost
-#    port: 5672
-#    username: guest
-#    password: guest

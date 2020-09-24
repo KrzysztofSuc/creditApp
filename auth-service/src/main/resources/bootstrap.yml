@@ -1,27 +1,9 @@
 spring:
-  cloud:
-    config:
-      enabled: false
   application:
     name: auth-service
-  datasource:
-    url: jdbc:mysql://localhost:3306/creditAppDb?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
-    username: root
-    password: root
-    driverClassName: com.mysql.jdbc.Driver
-  jpa:
-    show-sql: true
-    hibernate:
-      ddl-auto: create-drop
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.MySQL8Dialect
-server:
-  port: 0
-  eureka:
-    client:
-      serviceUrl:
-        defaultZone: http://discovery-server:8761/eureka/
-jwt:
-  expirationTime: 3600000
-  secret: alamakotakotmaale
+  cloud:
+    config:
+      uri: http://config-server:8888
+      fail-fast: true
+      retry:
+        max-attempts: 20
