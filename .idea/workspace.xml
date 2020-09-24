@@ -29,6 +29,14 @@
   <component name="ChangeListManager">
     <list default="true" id="99badef6-7a7d-4ae1-8d80-222fcf085fba" name="Default Changelist" comment="added Dockerfile and docker-compose files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screenshots/createCredit.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Screenshots/createCredit.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screenshots/creditNotFound.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Screenshots/creditNotFound.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screenshots/deleteCredit.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Screenshots/deleteCredit.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screenshots/getCredit.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Screenshots/getCredit.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screenshots/login.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Screenshots/login.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screenshots/loginBC.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Screenshots/loginBC.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screenshots/tokenExpiredOut.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Screenshots/tokenExpiredOut.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/resources/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/credit-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/credit-service/src/main/resources/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/creditApp/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/creditApp/exception/GlobalExceptionHandler.java" afterDir="false" />
@@ -259,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600959706038</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add screenshots">
+      <created>1600964546695</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1600964546695</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -283,7 +298,8 @@
     <MESSAGE value="update security" />
     <MESSAGE value="update bootstrap.yml and cleaning pom.xml" />
     <MESSAGE value="update bootstrap.yml and docker-compose.yml, add Dockerfile in auth-service" />
-    <option name="LAST_COMMIT_MESSAGE" value="update bootstrap.yml and docker-compose.yml, add Dockerfile in auth-service" />
+    <MESSAGE value="add screenshots" />
+    <option name="LAST_COMMIT_MESSAGE" value="add screenshots" />
   </component>
   <component name="WindowStateProjectService">
     <state x="409" y="157" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597318169455">
@@ -322,10 +338,10 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="651" y="299" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600452678954" />
-    <state x="427" y="0" key="CommitChangelistDialog2" timestamp="1600959704897">
+    <state x="427" y="0" key="CommitChangelistDialog2" timestamp="1600964545682">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="427" y="0" key="CommitChangelistDialog2/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600959704897" />
+    <state x="427" y="0" key="CommitChangelistDialog2/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600964545682" />
     <state x="91" y="91" width="1738" height="848" key="DiffContextDialog" timestamp="1598292964615">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
@@ -335,25 +351,25 @@
     </state>
     <state x="686" y="207" key="FileChooserDialogImpl/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1597318168405" />
     <state x="3258" y="261" key="FileChooserDialogImpl/0.0.1920.1030/2400.0.2400.1300@2400.0.2400.1300" timestamp="1598294518523" />
-    <state width="1864" height="270" key="GridCell.Tab.0.bottom" timestamp="1600963661987">
+    <state width="1864" height="270" key="GridCell.Tab.0.bottom" timestamp="1600965492852">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600963661987" />
+    <state width="1864" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600965492852" />
     <state width="2343" height="241" key="GridCell.Tab.0.bottom/0.0.1920.1030/2400.0.2400.1300@2400.0.2400.1300" timestamp="1598295650386" />
-    <state width="1864" height="270" key="GridCell.Tab.0.center" timestamp="1600963661987">
+    <state width="1864" height="270" key="GridCell.Tab.0.center" timestamp="1600965492851">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="270" key="GridCell.Tab.0.center/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600963661987" />
+    <state width="1864" height="270" key="GridCell.Tab.0.center/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600965492851" />
     <state width="2343" height="241" key="GridCell.Tab.0.center/0.0.1920.1030/2400.0.2400.1300@2400.0.2400.1300" timestamp="1598295650376" />
-    <state width="1864" height="270" key="GridCell.Tab.0.left" timestamp="1600963661987">
+    <state width="1864" height="270" key="GridCell.Tab.0.left" timestamp="1600965492851">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="270" key="GridCell.Tab.0.left/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600963661987" />
+    <state width="1864" height="270" key="GridCell.Tab.0.left/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600965492851" />
     <state width="2343" height="241" key="GridCell.Tab.0.left/0.0.1920.1030/2400.0.2400.1300@2400.0.2400.1300" timestamp="1598295650376" />
-    <state width="1864" height="270" key="GridCell.Tab.0.right" timestamp="1600963661987">
+    <state width="1864" height="270" key="GridCell.Tab.0.right" timestamp="1600965492851">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="270" key="GridCell.Tab.0.right/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600963661987" />
+    <state width="1864" height="270" key="GridCell.Tab.0.right/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600965492851" />
     <state width="2343" height="241" key="GridCell.Tab.0.right/0.0.1920.1030/2400.0.2400.1300@2400.0.2400.1300" timestamp="1598295650376" />
     <state width="1864" height="283" key="GridCell.Tab.1.bottom" timestamp="1600963241484">
       <screen x="0" y="0" width="1920" height="1030" />
@@ -390,10 +406,10 @@
     </state>
     <state x="311" y="0" key="SettingsEditor/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1598377181514" />
     <state x="2789" y="0" key="SettingsEditor/0.0.1920.1030/2400.0.2400.1300@2400.0.2400.1300" timestamp="1598294530127" />
-    <state x="451" y="179" key="Vcs.Push.Dialog.v2" timestamp="1600959712968">
+    <state x="451" y="179" key="Vcs.Push.Dialog.v2" timestamp="1600964548869">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="451" y="179" key="Vcs.Push.Dialog.v2/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600959712968" />
+    <state x="451" y="179" key="Vcs.Push.Dialog.v2/0.0.1920.1030/2400.0.2400.1300@0.0.1920.1030" timestamp="1600964548869" />
     <state x="638" y="191" key="com.intellij.docker.deployment.ui.DockerPortBindingsField.v173.dialogSize" timestamp="1596040205323">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
